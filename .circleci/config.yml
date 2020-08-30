@@ -7,7 +7,7 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "fc:7f:53:3f:c1:1a:17:75:07:2c:b7:08:40:5b:dc:82" #上記メモったハッシュを指定
-      - run: ssh -p $SSH_PORT $SSH_USER@$SSH_HOST "/var/www/html/circleci/deploy-me.sh"
+      - run: ssh -p $SSH_PORT $SSH_USER@$SSH_HOST "cd /var/www/html/circleci/ && git pull origin master"
  
 workflows:
   version: 2
