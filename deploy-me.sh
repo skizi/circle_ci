@@ -1,3 +1,3 @@
 #!/bin/bash
  
-cd /var/www/html/circleci/ && git pull origin master:master
+cd /var/www/html/circleci/ && git pull git@github.com:skizi/circle_ci.git
