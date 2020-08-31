@@ -3,7 +3,7 @@ jobs:
   deploy:
     machine:
       enabled: true
-    working_directory: ~/circle_ci
+    working_directory: /home/circleci/project/circle_ci
     steps:
       - add_ssh_keys:
           fingerprints:
