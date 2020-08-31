@@ -8,7 +8,6 @@ jobs:
           fingerprints:
             - "fc:7f:53:3f:c1:1a:17:75:07:2c:b7:08:40:5b:dc:82" #上記メモったハッシュを指定
       - run: rsync ssh hoge.txt -p $SSH_PORT $SSH_USER@$SSH_HOST:/var/www/html/circleci/
-"
  
 workflows:
   version: 2
