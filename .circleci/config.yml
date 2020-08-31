@@ -6,8 +6,8 @@ jobs:
     steps:
       - add_ssh_keys:
           fingerprints:
-            - "fc:7f:53:3f:c1:1a:17:75:07:2c:b7:08:40:5b:dc:82" #上記メモったハッシュを指定
-      - run: rsync ssh hoge.txt -p $SSH_PORT $SSH_USER@$SSH_HOST:/var/www/html/circleci/
+            - "65:a5:7d:c0:be:3b:90:f9:53:f1:ef:da:d3:a4:2b:ae" #上記メモったハッシュを指定
+      - run: rsync ssh hoge.txt -p ${SSH_PORT} ${SSH_USER}@${SSH_HOST}:/var/www/html/circleci/
  
 workflows:
   version: 2
